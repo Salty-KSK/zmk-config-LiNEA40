@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,
+            //スクロール方向を逆転,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -147,10 +147,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp LBKT   &kp HASH   &kp DOLLAR        &kp PERCENT                           &kp AMPERSAND  &kp CARET  &kp RS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans           &trans     &trans     &kp LS(KP_MINUS)  &none                                 &none          &none      &none                    &none              &none
-&trans           &kp LC(X)  &kp LC(C)  &kp LC(V)         &trans                                &none          &none      &none                    &none              &kp LS(QUESTION)
-&trans           &trans     &trans     &trans            &trans       &trans    &kp BACKSPACE  &kp PLUS                  &none                    &none              &none
+&kp EXCLAMATION  &kp LBKT   &kp HASH   &kp DOLLAR  &kp PERCENT                          &kp AMPERSAND  &kp CARET    &kp RS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp BACKSLASH
+&none            &none      &none      &kp SQT     &none                                &none          &kp AT_SIGN  &none                    &none              &none
+&none            &kp LC(X)  &kp LC(C)  &kp LC(V)   &none                                &none          &none        &none                    &none              &kp LS(QUESTION)
+&none            &none      &none      &none       &none        &none    &kp BACKSPACE  &kp PLUS                    &none                    &none              &none
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -160,10 +160,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE     &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                          &to 7  &none  &none      &none    &kp DELETE
-&kp TAB        &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                          &none  &none  &none      &none    &kp ENTER
-&none          &kp AT_SIGN   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                          &none  &none  &kp COMMA  &kp DOT  &none
-&kp LS(MINUS)  &kp SLASH     &none         &kp NUMBER_0  &trans        &none    &kp BACKSPACE  &none         &none      &none    &none
+&kp ESCAPE     &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                          &to 7  &none  &none      &none    &kp DELETE
+&kp TAB        &kp KP_MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                          &none  &none  &none      &none    &kp ENTER
+&none          &kp KP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                          &none  &none  &kp COMMA  &kp DOT  &none
+&kp LS(MINUS)  &kp LA(SLASH)    &none         &kp NUMBER_0  &trans        &none    &kp BACKSPACE  &none         &none      &none    &none
             >;
         };
 
